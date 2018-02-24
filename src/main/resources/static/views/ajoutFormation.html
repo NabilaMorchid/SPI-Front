@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+  <div ng-controller="ajoutformationCtrl">
+        <table >
+        
+		<tr><td>Code Formation: </td><td><input type="text" placeholder="Code Formation" name="codeFormation" ng-model="codeFormation" required /></td></tr>
+    	<tr><td>Début d'accréditation: </td><td><input type="date" name="DebutAccreditation" ng-model="debutAccreditation" required /></td></tr>
+    	<tr><td>Diplome : </td><td><input type="text" placeholder="Diplome" name="diplome" ng-model="diplome" required /></td></tr>
+    	<tr><td>Double diplome : </td><td><input placeholder="Double diplome" type="text" name="DoubleDiplome" ng-model="doubleDiplome" required /></td></tr>
+    	<tr><td>Fin d'accréditation: </td><td><input type="date" name="FinAccreditation" ng-model="finAccreditation" required /></td></tr>
+    	<tr><td>N° d'année : </td><td><input type="text" placeholder="N° d'année" name="n0Annee" ng-model="n0Annee" required /></td></tr>
+		<tr><td>Nom de Formation: </td><td><input type="text" placeholder="Nom de Formation" name="nomFormation" ng-model="nomFormation" required /></td></tr>
+   		 <tr><td><button class="btn btn-success"  ng-click="SendData()">Submit</button></td></tr>
+		</table>
+		
+		</div>
+		

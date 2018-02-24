@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<meta charset="utf-8">
+
+
+ <!-- Bootstrap Styles-->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="./assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="./assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="./assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> 
+    <link href="./assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+
+</head>
+<body>
+<div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-gear"></i> <strong>SPI</strong></a>
+            </div>
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" href="#/"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#!enseignant"><i class="fa fa-desktop"></i> Enseignant</a>
+                    </li>
+					<li>
+                        <a href="#!formation"><i class="fa fa-bar-chart-o"></i> Formation</a>
+                    </li>
+                 
+
+
+                   
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                       
+						
+                    </div>
+                </div>
+				
+				
+                <!-- /. ROW  -->
+<div ng-view></div>	
+                <div class="row">
+                   
+                    
+                </div>	
+                					
+            </div>
+             <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+        
+    </div>
+	
+
+
+
+</body>
+<script type="text/javascript" src="./js/angular.min.js"></script>
+<script type="text/javascript" src="./js/angular-route.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript"
+	src="./controllers/FormationController.js"></script>
+<script type="text/javascript" src="./controllers/ajoutformationCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/formationDetailsCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/modifierFormationCtrl.js"></script>
+<script type="text/javascript" src="./controllers/enseignantCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/enseignantDetailsCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/enseignantDetailsCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/ajoutEnseignantCtrl.js"></script>
+<script type="text/javascript"
+	src="./controllers/modifierEnseignantCtrl.js"></script>
+	<script type="text/javascript"
+	src="./controllers/dashboard.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<div ng-controller="enseignantDetailsCtrl">
+
+ <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Numero enseignant</th>
+                            <th>Adresse</th>
+                            <th>Code postal</th>
+                            
+                            <th>Email UBO</th>
+                            <th>Mobile</th>
+                            <th>Nom</th>
+                            <th>Pays</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                           
+                            <th>Type</th>
+                            <th>Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>{{enseignants.noEnseignant}}</td>
+                            <td>{{enseignants.adresse}}</td>
+                            <td>{{enseignants.codePostal}}</td>
+                          
+                            <td>{{enseignants.emailUbo}}</td>
+                            <td>{{enseignants.mobile}}</td>
+                            <td>{{enseignants.nom}}</td>
+                            <td>{{enseignants.pays}}</td>
+                            <td>{{enseignants.prenom}}</td>
+                            <td>{{enseignants.sexe}}</td>
+                         
+                            <td>{{enseignants.type}}</td>
+                            <td>{{enseignants.ville}}</td>                            
+                            <td>
+                        <td><button type="button"><a href="#!modifierEnseignant/{{enseignants.noEnseignant}}">Modifier</a></button></td>
+                             </td>
+                        </tr>
+                    </tbody>
+                </table></div>

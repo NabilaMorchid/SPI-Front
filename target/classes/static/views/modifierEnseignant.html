@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+<div ng-controller="modifierEnseignantCtrl">
+
+	<form ng-submit="modifierEnseignant()">
+
+		<table>
+
+			<tr>
+				<td><label>Numero enseignant</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.noEnseignant"disabled="disabled"></td>
+			</tr>
+			<tr>
+				<td><label>Adresse</label></td>
+				<td><input type="text" ng-model="enseignantAModifier.adresse"></td>
+			</tr>
+			<tr>
+				<td><label>Code Postal</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.codePostal"></td>
+			</tr>
+			<tr>
+				<td><label>Email personnel</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.emailPerso"></td>
+			</tr>
+			<tr>
+				<td><label>Email UBO</label></td>
+				<td><input type="text" ng-model="enseignantAModifier.emailUbo"></td>
+			</tr>
+			<tr>
+				<td><label>Mobile</label></td>
+				<td><input type="text" ng-model="enseignantAModifier.mobile"></td>
+			</tr>
+			<tr>
+				<td><label>Nom</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.nom"></td>
+			</tr>
+			<tr>
+				<td><label>Pays</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.pays"></td>
+			</tr>
+			<tr>
+				<td><label>Prenom</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.prenom"></td>
+			</tr>
+			<tr>
+				<td><label>Sexe</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.sexe"></td>
+			</tr>
+			<tr>
+				<td><label>Téléphone</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.telephone"></td>
+			</tr>
+
+			<tr>
+				<td><label>Type</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.type"></td>
+			</tr>
+			
+			<tr>
+				<td><label>Ville</label></td>
+				<td><input type="text"
+					ng-model="enseignantAModifier.ville"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit"
+					value="Modifier"></td>
+			</tr>
+		</table>
+	</form>
+
+</div>

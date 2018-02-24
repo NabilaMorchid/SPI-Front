@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<div ng-controller="formationDetailsCtrl">
+ <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Code Formation</th>
+                            <th>Debut Accréditation</th>
+                            <th>Diplome</th>
+                            <th>Double Diplomation</th>
+                            <th>Fin Accréditation</th>
+                            <th>N°Année</th>
+                            <th>Nom Formation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>{{formations.codeFormation}}</td>
+                            <td><span ng-bind="f.debutAccreditation"></span></td>
+                            <td><span ng-bind="f.diplome"></span></td>
+                            <td><span ng-bind="f.doubleDiplome"></span></td>
+                            <td><span ng-bind="f.finAccreditation"></span></td>
+                            <td><span ng-bind="f.n0Annee"></span></td>
+                            <td><span ng-bind="f.nomFormation"></span></td>
+                            <td>
+                        <td><button type="button"><a href="#!modifierFormation/{{formations.codeFormation}}">Modifier</a></button></td>
+                             </td>
+                        </tr>
+                    </tbody>
+                </table></div>
